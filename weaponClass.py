@@ -1,10 +1,13 @@
+
+from ast import If
+from os import stat
 import random
+
 
 '''
 Create a Weapon Class definition according to the following specs:
 
 Attributes:
-
 name - user supplied
 bullets - random number between 10 and 100000
 speed - user supplied
@@ -23,10 +26,20 @@ the attribute 'status' to 'Inactive'
 
 '''
 
-
-
-
-
-
-
+class Weapon:
+    def __init__(self,name,speed,range):
+        self.name = name
+        self.bullets = random.randint(10,10000)
+        self.speed = speed
+        self.range = range
+        self.status = 'Active'
+     
+    
+    def fire_bullet(self):
+        if self.bullets >0:
+            self.bullets =self.bullets - 1 
+        else:
+            self.bullets=0
+            self.status='Inactivde'
+        
 
