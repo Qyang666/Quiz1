@@ -39,7 +39,6 @@ HINT: Follow the comments for each line to help with the logic of the problem.
 
     # create an instance of the weapon object using the 
     # specs from the csv file (name,speed and range) 
-    
 
     # append the name and bullet count to 'weapons_dict'
     
